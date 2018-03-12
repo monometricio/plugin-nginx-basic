@@ -1,0 +1,4 @@
+{
+    "executable" : "nginx.sh",
+    "description" : "nginx webserver overview"
+}
