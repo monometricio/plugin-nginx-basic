@@ -1,9 +1,19 @@
-# mm-nginx
+# plugin-nginx-basic
 Monometric.IO nginx plugin (https://monometric.io)
 
 ## Description
 
-This plugin will query nginx via the ngx_http_stub_status_module.html and provide the following keys.
+This plugin will query nginx via the ngx_http_stub_status_module and provide metrics.
+
+## Installation
+
+```mm-plugins install monometricio/plugin-nginx-basic```
+
+```mm-plugins enable monometricio/plugin-nginx-basic```
+
+You should see the plugin when running ```mm-plugins list```.
+
+Remember to edit the configuration file ```/etc/mm-agent/plugins/monometricio-plugin-nginx-basic.conf```.
 
 ## Provided metrics
 
@@ -44,3 +54,8 @@ NGINX_URL=http://127.0.0.1/nginx-status
 Further documentation about the nginx stub module can be found on:
 http://nginx.org/en/docs/http/ngx_http_stub_status_module.html
 
+## Testing configuration
+
+You can test-run the plugin and verify the output by running:
+
+```mm-plugins run monometricio/plugin-nginx-basic```
